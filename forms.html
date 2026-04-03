@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .boxes {
+            border-radius: 10px;
+            height: 24px;
+            width: 200px;
+            cursor:pointer;
+           padding:10px;
+        }
+
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        .container {
+            padding: 20px;
+            height:fit-content;
+            width: fit-content;
+            margin: 140px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+             border: 1px solid rgba(255, 255, 255, 0.25);
+             position:relative;
+             z-index: 1;
+               backdrop-filter:blur(10px) saturate(180%);
+            
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Syne', sans-serif;
+            margin-bottom:5px;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+        }
+        .submit{
+            display:flex;
+            padding-top: 10px;
+            height:25px;
+            width:25px;
+            gap:20px;
+            border-radius:25px;
+        }
+        #bandbox:hover{
+          transform:scale(1.1);
+          
+        }
+        #lanndbox:hover{
+            transform:scale(1.1);
+             
+        }
+        select.boxes{
+    width: 100%;
+    height:100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact page:</h1>
+    <form>
+
+    <label for="name">Name:</label><br>
+    <input class="boxes" id="name" type="text" placeholder="Your Name in caps" required>
+
+    <br><br>
+
+    <label for="state">State:</label><br>
+    <input class="boxes" id="state" type="text" placeholder="Ex: Telangana">
+
+    <br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input class="boxes" id="email" type="email" placeholder="Ex: sanjivinsmoke@gmail.com" name="email" required>
+
+    <br><br>
+
+    <label for="phone">Phone No:</label><br>
+    <input class="boxes" id="phone" type="tel" placeholder="Ex: +91 1234567890" name="phone" required>
+
+    <br><br>
+   <label for="date of birth">Date of Birth:</label><br>
+    
+   <input class="boxes" id="date of birth" type="date" placeholder="Ex: 1990-01-01" name="date of birth" required>
+   <br><br>
+   <label for="City">City:</label> <br>
+  <select class="boxes" id="City" name="City">
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Chennai">Chennai</option>
+  
+  </select><br><br>
+
+   <div class="submit">
+        <button id="bandbox" type="submit">Submit</button>
+        <button id="lanndbox" type="reset">Reset</button>
+    </div>
+
+
+</form>
+    </div>
+
+</body>
+
+</html>
